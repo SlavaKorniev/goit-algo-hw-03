@@ -12,7 +12,7 @@ def get_upcoming_birthdays(users):
         user_date = {}       
         # change type date_user to date
         date_user_birthday = datetime.strptime(user_birthdays["birthday"], "%Y.%m.%d").date()
-        
+
         # change year in date_user on curently
         present_date_user_birthday = datetime(year=year_now, month=date_user_birthday.month, day=date_user_birthday.day).date()
             
@@ -41,11 +41,9 @@ def get_upcoming_birthdays(users):
     return congratulation_users_date
 
 
-
-
 users = [
-    {"name": "John Doe", "birthday": "1985.01.23"},
-    {"name": "Jane Smith", "birthday": "1990.01.27"}
+    {"name": "John Doe", "birthday": "1985.03.13"},
+    {"name": "Jane Smith", "birthday": "1990.03.15"}
 ]
 
 upcoming_birthdays = get_upcoming_birthdays(users)
